@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Crypto Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Crypto Converter</h1>
+      </header>
+
+      <main>
+        <label>
+          Converter <b>of</b>
+          <select id="select-crypto">
+            <option>SLP</option>
+            <option>Bitcoin</option>
+          </select>
+        </label>
+
+        <label>
+          Converter <b>for</b>
+          <select id="select-currency">
+            <option>US$ Dólar americano</option>
+            <option>R$ Real</option>
+          </select>
+        </label>
+
+        <label>
+            <p>Value</p>
+            <input placeholder="Enter the value of your coin." id="input-crypto"></input>
+        </label>
+
+        <button type="button" id="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-container">
+                <img src="./assets/SLP.png" alt="Crypto-Image" id="crypto-image" width="44px" height="44px">
+                <p class="currency-name" id="currency-name-crypto">Smooth Love Potion</p>
+                <p class="currency-value" id="crypto-value-text">0</p>
+            </div>
+
+            <img src="./assets/Vector.png" alt="arrow" class="arrow-img">
+
+            <div class="currency-container">
+                <img src="./assets/dolar.png" alt="money" id="currency-image" width="44px" height="44px">
+                <p class="currency-name" id="currency-name">Dólar americano</p>
+                <p class="currency-value" id="currency-value-text">$ 0</p>
+            </div>
+          </section>
+      </main>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+</html>
